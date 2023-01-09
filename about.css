@@ -1,0 +1,259 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/bgabout.png);
+    background-size: cover;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrats', sans-serif;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 7px rgb(187, 167, 52);
+    font-family: 'Harry Potter', sans-serif;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    text-shadow: 1px 1px 7px rgb(187, 167, 52);
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active {
+    background: white;
+    color: rgb(0, 0, 39);
+    text-shadow: none;
+}
+
+/* HEADER END */
+
+.aboutme .isiabout,
+.textabout h1 h5 p {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 100px;
+}
+
+.aboutme {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme .isiabout img {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.textabout {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.isiabout {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textabout h1 {
+    color: #ffcc74;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.textabout h5 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px; 
+}
+
+.textabout p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+button {
+    background-color: #ffcc74;
+    color: black;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: .4s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .aboutme {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .aboutme .isiabout img{
+        margin-bottom: 35px;
+    }
+    .textabout h1{
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(5, 5, 5);
+    z-index: 10000;
+}
+
+.footer .footerlogo {
+    position: relative;
+    top: 40px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    pointer-events: none;
+    text-shadow: 3px 3px 10px black;
+}
+
+.footer .social {
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(255, 197, 72);
+    letter-spacing: 30px;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0.75;
+    text-shadow: 3px 3px 10px black;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+    text-shadow: 2px 2px 7px black;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+.footer .footerziel {
+    top: 20px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    pointer-events: none;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+}
+
+.footer .copyright {
+    pointer-events: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    top: 30px;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+}
+/* FOOTER END*/
